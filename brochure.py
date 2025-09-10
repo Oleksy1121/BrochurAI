@@ -1,9 +1,11 @@
-from pathlib import Path
+import os
 from utils import client, MODEL, get_brochure_user_prompt
 from prompts import system_prompt
 
-def create_brochure(company_name: str, url: str, filename: str = "output/Brochure.md"):
-    Path(filename).parent.mkdir(exist_ok=True)
+def create_brochure(company_name: str, url: str, brochure_dir: str = "output/"):
+
+    os.makedirs(brochure_dir, exist_ok=True)
+    filename = os.path.join(brochure_dir, f"{company_name}_Brochure.md")
 
     response = client.chat.completions.create(
         model=MODEL,
