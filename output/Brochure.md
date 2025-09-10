@@ -1,80 +1,34 @@
-# Automatic Company Brochure Generator
+# Welcome to Coursera: Transforming Lives Through Learning
 
-## Description
+### **About Us**
+Coursera is a leading global online learning platform founded in 2012 by Andrew Ng and Daphne Koller. Our mission is to provide anyone, anywhere access to high-quality education, helping individuals transform their lives and careers through learning. We partner with over **350 leading universities and companies**, offering an extensive catalog of **10,000+ courses**, degrees, and recognized credentials that empower people to build new skills and achieve their professional goals.
 
-This project is a Python command-line tool that automatically generates marketing brochures for companies based on the content of their websites. It utilizes Large Language Models (LLMs) to analyze and summarize key information about a company, its culture, customers, and career opportunities.
+### **Our Vision**
+We envision a world where learning is a right, not a privilege. Coursera strives to democratize education so that anyone can benefit from the transformative power of learning—regardless of their background or circumstances. Our partnerships enable us to deliver job-relevant online education and support individuals and organizations in navigating the future of work.
 
-## Features
+### **Who We Serve**
+- **Individuals:** Join over **175 million learners** worldwide who are advancing their careers, developing new skills, and discovering their passions.
+- **Businesses:** Empower your teams with skills that drive innovation through our targeted training solutions tailored to meet industry needs.
+- **Universities:** Equip students with in-demand skills and prepare them for a successful career through Coursera for Campus.
+- **Governments:** Enhance workforce readiness and development with tailored learning paths for public sector employees and citizens.
 
-- **Web Scraping**: Automatically fetches content from a company's homepage and other identified subpages (e.g., "About Us," "Careers").
-- **Intelligent Link Analysis**: Uses an LLM to identify the most relevant links on a website to create a comprehensive brochure.
-- **Content Generation**: Employs an advanced language model to create a coherent and engaging brochure in Markdown format.
-- **Customization**: Easily specify the target company and its URL by modifying the `main.py` file.
+### **Careers at Coursera**
+Coursera is proud to be a **Public Benefit Corporation** and is committed to making a positive impact on society. We believe in creating a workplace that fosters diversity, encourages collaboration, and drives innovation. Our employees thrive in a culture where their contributions matter, and they are empowered to grow both personally and professionally. 
 
-## Installation
-1. **Clone the repository:**
-	``` bash
-	git clone https://github.com/your-user/your-repository.git
-	cd your-repository
-	```
+Join us! We are looking for individuals passionate about education technology who are committed to our vision of transforming lives through learning. Explore current career opportunities on our [Careers page](#).
 
-2. **Create and activate a virtual environment:**
-	``` bash
-	python -m venv venv
-	source venv/bin/activate  # On Windows, use `venv\Scripts\activate`
-	```
+### **Customer Testimonials**
+> “Being a working mother means I’m constantly juggling my schedule, and I am very grateful for Coursera’s flexible and remote learning programs.” – **Kenia R., United States**
 
-3. **Install dependencies:**
-	``` bash
-	pip install -r requirements.txt
-	```
+> “The courses provided me a deep understanding of UX design and helped me feel prepared for entry-level jobs.” – **Ryan L., United States**
 
-4. **Configure your API key:**
-	- Create a `.env` file in the project's root directory.
-	- Add your OpenAI API key to it in the following format:    
+> “Coursera has provided a platform to compensate for my missed years of education and has helped me improve my writing skills.” – **Madiha A., Indonesia**
 
-		```
-		OPENAI_API_KEY='your_api_key'
-		```
+### **Join the Coursera Community**
+Embark on a learning journey with Coursera today! Access thousands of courses covering diverse topics, gain recognized certifications, or pursue a degree online—all at your own pace. Whether you want to change careers, upskill in your current role, or explore new interests, Coursera has the resources you need.
 
-## Usage
+### **Get Started Now!**
+- Visit [Coursera](https://www.coursera.org) and join our learning community.
+- Check out our special offers and begin your journey towards acquiring new skills today!
 
-1. **Set the target company:**
-- Open the `main.py` file.
-- Change the values of the `COMPANY_NAME` and `URL` variables to the name and website address of the company for which you want to generate the brochure.
-
-``` python
-if __name__ == "__main__":
-	COMPANY_NAME = 'Coursera'
-	URL = "https://coursera.org"
-	create_brochure(COMPANY_NAME, URL)
-```
-    
-2. **Run the script:**
-
-	```
-	python main.py
-	```
-
-1. **Find the output:**
-- The generated brochure will be saved in the `output/Brochure.md` file.
-
-## Project Structure
-
-```
-|
-├── main.py             # Main script to run the program
-├── brochure.py         # Module responsible for creating the brochure
-├── utils.py            # Utility functions, including OpenAI API interactions
-├── scraper.py          # Class for fetching and parsing website content
-├── prompts.py          # Stores system prompts for the LLMs
-└── output/
-    └── Brochure.md     # Example output file
-```
-
-## Acknowledgements
-
-This project was inspired by and created thanks to materials from the **LLM Engineering** course by **Ed Donner**.
-
-This repository accompanies the LLM Engineering masterclass course
- ([https://github.com/ed-donner/llm_engineering](vscode-file://vscode-app/c:/Users/Marcin/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/code/electron-browser/workbench/workbench.html))
+**Together, let’s empower ourselves and our communities through the power of education.**
