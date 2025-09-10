@@ -18,18 +18,24 @@ This project is a Python command-line tool that automatically generates marketin
 	cd your-repository
 	```
 
-2. **Install dependencies:**
+2. **Create and activate a virtual environment:**
+	``` bash
+	python -m venv venv
+	source venv/bin/activate  # On Windows, use `venv\Scripts\activate`
+	```
+
+3. **Install dependencies:**
 	``` bash
 	pip install -r requirements.txt
 	```
 
-3. **Configure your API key:**
-- Create a `.env` file in the project's root directory.
-- Add your OpenAI API key to it in the following format:    
+4. **Configure your API key:**
+	- Create a `.env` file in the project's root directory.
+	- Add your OpenAI API key to it in the following format:    
 
-    ```
-    OPENAI_API_KEY='your_api_key'
-    ```
+		```
+		OPENAI_API_KEY='your_api_key'
+		```
 
 ## Usage
 
@@ -37,12 +43,12 @@ This project is a Python command-line tool that automatically generates marketin
 - Open the `main.py` file.
 - Change the values of the `COMPANY_NAME` and `URL` variables to the name and website address of the company for which you want to generate the brochure.
 
-    ``` python
-    if __name__ == "__main__":
-        COMPANY_NAME = 'Coursera'
-        URL = "https://coursera.org"
-        create_brochure(COMPANY_NAME, URL)
-    ```
+``` python
+if __name__ == "__main__":
+	COMPANY_NAME = 'Coursera'
+	URL = "https://coursera.org"
+	create_brochure(COMPANY_NAME, URL)
+```
     
 2. **Run the script:**
 
@@ -71,4 +77,4 @@ This project is a Python command-line tool that automatically generates marketin
 This project was inspired by and created thanks to materials from the **LLM Engineering** course by **Ed Donner**.
 
 This repository accompanies the LLM Engineering masterclass course
-https://github.com/ed-donner/llm_engineering
+ ([https://github.com/ed-donner/llm_engineering](vscode-file://vscode-app/c:/Users/Marcin/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/code/electron-browser/workbench/workbench.html))
