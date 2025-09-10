@@ -3,7 +3,7 @@ from utils import client, MODEL, get_brochure_user_prompt
 from prompts import system_prompt
 
 def create_brochure(company_name: str, url: str, filename: str = "output/Brochure.md"):
-    Path(filename).parent.mkdir()
+    Path(filename).parent.mkdir(exist_ok=True)
 
     response = client.chat.completions.create(
         model=MODEL,
